@@ -36,6 +36,6 @@ https://rauladriano.github.io/pos-utfpr-dividas-pendentes/
 - Abrir o projeto no editor Visual Studio Code (VS Code)
 - Abrir um terminal pelo VSCode e executar a API Fake (JSON Server) (enviada no moodle) via o seguinte comando: 
   - Comando: `npm start`
-  - O comando deve ser aplicado no diretório raiz do projeto, ou seja, que contém o arquivo `db.json` e `routes.json`.
+  - O comando deve ser aplicado no backend enviado.
 - Abrir um novo terminal pelo VSCode e então executar o projeto Angular
   - Comando: `ng serve`
