@@ -30,6 +30,8 @@ import locatePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button'
 
+registerLocaleData(locatePt, 'pt');
+
 @NgModule({
   declarations: [
     AppComponent,
