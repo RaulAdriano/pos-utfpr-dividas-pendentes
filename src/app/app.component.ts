@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pos-utfpr-dividas-pendentes';
+
+  nomeAPP : string = 'Dívidas Pendentes';
+  textoFooter : string = 'Desenvolvido por Raul Adriano Ramos - Pós UTFPR - Especialização Em Tecnologia Java';
+  
 }
