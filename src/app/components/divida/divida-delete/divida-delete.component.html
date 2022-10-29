@@ -2,28 +2,28 @@
     <mat-card-title> Excluir Divida</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Nome Credor" [(ngModel)]="divida.nomeCredor" name="nomeCredor">
+            <input matInput placeholder="Nome Credor" [(ngModel)]="divida.nomeCredor" name="nomeCredor" pattern="^(\s?[A-ZÀ-Ú][a-zà-ú]*)+(\s[a-zà-ú]*)?(\s[A-ZÀ-Ú][a-zà-ú]*)+" readonly>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Documento Credor" [(ngModel)]="divida.documentoCredor" name="documentoCredor">
+            <input matInput placeholder="Documento Credor" [(ngModel)]="divida.documentoCredor" name="documentoCredor" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" readonly>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Título" [(ngModel)]="divida.titulo" name="titulo">
+            <input matInput placeholder="Título" [(ngModel)]="divida.titulo" name="titulo" readonly>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Valor (R$)" [(ngModel)]="divida.valor" name="valor">
+            <input matInput placeholder="Valor (R$)" [(ngModel)]="divida.valor" name="valor" readonly>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Forma pagamento" [(ngModel)]="divida.formaPagamento" name="formaPagamento">
+            <input matInput placeholder="Observação sobre Forma pagamento" [(ngModel)]="divida.formaPagamento" name="formaPagamento" readonly>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Houve parcelamento?" [(ngModel)]="divida.houveParcelamento" name="houveParcelamento">
+            <input matInput placeholder="Descrição sobre parcelamento" [(ngModel)]="divida.houveParcelamento" name="houveParcelamento" readonly>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Numero parcelas" [(ngModel)]="divida.numeroParcelas" name="numeroParcelas">
+            <input matInput placeholder="Numero parcelas" [(ngModel)]="divida.numeroParcelas" name="numeroParcelas" readonly>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Status" [(ngModel)]="divida.status" name="status">
+            <input matInput placeholder="Situação atual da dívida" [(ngModel)]="divida.status" name="status" readonly>
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="deleteDivida()" color="warn">
