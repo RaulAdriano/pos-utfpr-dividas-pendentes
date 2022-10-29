@@ -11,13 +11,20 @@ export class DividaReadComponent implements OnInit {
 
   dividas: Divida[] = []; 
   displayedColumns = ['id', 'titulo', 'valor', 'action']
+  credores: String[]= [];
   
     constructor(private dividaService: DividaService) { }
   
     ngOnInit(): void {
       this.dividaService.read().subscribe(dividas =>{
         this.dividas = dividas
+
+        this.dividas.forEach(divida => {
+          this.credores.push(divida.nomeCredor)
+        })
       })
-  
+
+
+      
     }
 }
