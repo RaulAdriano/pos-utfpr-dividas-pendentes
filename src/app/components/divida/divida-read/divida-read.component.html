@@ -51,5 +51,14 @@
           {{ credor }}
         </li>
       </ul>
+      <strong>
+          <div *ngIf="credores.length > 0">
+            {{ credores.length }}  credores encontrados!
+          </div>
+
+          <div *ngIf="credores.length == 0">
+            Nenhum credor encontrado!
+          </div>
+      </strong>
     </mat-card>
   </div>
